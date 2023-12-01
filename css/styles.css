@@ -506,7 +506,6 @@ h2 {
     background-color: #E7E9FC;
     border: 1px solid #E7E9FC;
     padding: 0;
-    color: #2E2F42;
     border-radius: 50%;
     line-height: 0;
     width: 24px;
@@ -514,6 +513,7 @@ h2 {
     position: absolute;
     top: 24px;
     right: 24px;
+    stroke: #2E2F42;
 
 }
 
