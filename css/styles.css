@@ -510,6 +510,7 @@ h2 {
     flex-shrink: 0;
     border-radius: 4px;
     background: #FCFCFC;
+    padding: 72px 24px 0 24px;
 }
 
 .modal-close-btn {
@@ -529,20 +530,63 @@ h2 {
 }
 
 .modal-close-btn:hover, .modal-close-btn:focus {
-background-color: #404BBF;
-stroke: #FFFFFF;
-fill: #FFFFFF;
+    background-color: #404BBF;
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
 }
 
 .review-form-description {
-    margin: 72px 24px 16px 24px;
+    width: 360px;
     color: #2E2F42;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.review-form-input {
+    width: 100%;
+    width: 360px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    padding-left: 38px;
+    transition: border-color 250ms linear;
+}
+
+.review-form-input:focus {
+    border-color: #4D5AE5;
+
+}
+
+.review-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.review-form-field-label {
+    display: block;
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.review-form-input-wrapper {
+position: relative;
+}
+
+.review-form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2E2F42;
 }
 /* <--=========================== / MODAL ==============================--> */
-
 
