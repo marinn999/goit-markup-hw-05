@@ -447,7 +447,63 @@
         <use href="./images/icons.svg#icon-close"></use>
     </svg>
 </button>
-    </svg>
+    <p class="review-form-description">Leave your contacts and we will call you back</p>
+    <form class="review-form">
+        <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <input 
+            class="review-form-input" 
+            id="user-name" 
+            name="user-name" 
+            type="text"
+            pattern="[a-zA-Zа-яА-ЯІіЇїЄєҐґʼ]+"
+            title="Maryna"
+            required>
+        </div>
+        <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-phone">Phone</label>
+            <input 
+            class="review-form-input" 
+            id="user-phone" 
+            name="user-phone" 
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            required>
+        </div>
+        <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email">Email</label>
+            <input 
+            class="review-form-input" 
+            id="user-email" 
+            name="user-email" 
+            type="email"
+            required>
+        </div>
+        <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment">Comment</label>
+            <textarea 
+            class="review-form-comment" 
+            name="user-comment" 
+            id="user-comment"
+            placeholder="Text input"
+            required></textarea>
+        </div>
+        <div class="review-form-checkbox-wrapper">
+            <input 
+            class="review-form-checkbox" 
+            id="user-privacy-policy" 
+            name="user-privacy-policy" 
+            type="checkbox"
+            value="true"
+            required>
+            <label for="user-privacy-policy" 
+            class="review-form-checkbox-label">I accept the terms and conditions of the 
+            <a href="">Privacy Policy</a>
+            </label>
+        </div>
+        <button class="review-form-submit-btn" type="submit">Send</button>
+    </form>
 </div>
 
 </div>
