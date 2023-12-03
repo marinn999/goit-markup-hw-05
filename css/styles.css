@@ -559,7 +559,7 @@ h2 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -654,6 +654,10 @@ h2 {
     margin-bottom: 8px;
 }
 
+.review-form-field-wrapper:last-child {
+    margin-bottom: 16px;
+}
+
 .review-form-field-label {
     display: block;
     color: #8E8F99;
@@ -745,7 +749,7 @@ h2 {
 }
 
 .review-form-checkbox-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .privacy-policy-link {
@@ -771,7 +775,6 @@ h2 {
     border-radius: 4px;
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
