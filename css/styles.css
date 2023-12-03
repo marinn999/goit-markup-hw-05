@@ -477,12 +477,8 @@ h2 {
 }
 
 .subscribe-footer-form {
-display: flex;
-gap: 24px;
-}
-
-.subscribe-footer-label {
-   display: none;
+    display: flex;
+    gap: 24px;
 }
 
 .subscribe-footer-div {
