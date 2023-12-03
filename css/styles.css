@@ -559,7 +559,7 @@ h2 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms linear, visability 250ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -580,10 +580,17 @@ h2 {
     flex-shrink: 0;
     border-radius: 4px;
     background: #FCFCFC;
-    padding: 72px 24px 0 24px;
+    padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.10);
     padding: 0;
@@ -596,6 +603,7 @@ h2 {
     right: 24px;
     stroke: #2E2F42;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -603,6 +611,11 @@ h2 {
     background-color: #404BBF;
     stroke: #FFFFFF;
     fill: #FFFFFF;
+    border: none;
+}
+
+.modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-description {
@@ -678,7 +691,7 @@ h2 {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
 }
 
 .review-form-comment::placeholder {
@@ -699,11 +712,14 @@ h2 {
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox:checked + .review-form-checkbox-label > .review-form-own-checkbox {
     background-color: #404BBF;
-    border-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .review-form-checkbox-icon {
@@ -729,7 +745,7 @@ h2 {
 }
 
 .review-form-checkbox-wrapper {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .privacy-policy-link {
@@ -742,7 +758,8 @@ h2 {
 }
 
 .review-form-submit-btn {
-    width: 177px;
+    display: block;
+    min-width: 169px;
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -761,6 +778,11 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-submit-btn:hover, .review-form-submit-btn:focus {
+    background-color: #404BBF;
 }
 /* <--=========================== / MODAL ==============================--> */
 
